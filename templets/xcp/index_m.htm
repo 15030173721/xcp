@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta content="width=device-width,user-scalable=no" name="viewport">
+<meta charset="{dede:global.cfg_soft_lang/}" />
+<meta name="author" content="order by dede58.com/" />
+<title>{dede:global.cfg_webname/}移动版</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="/m/skin/css/bootstrap.min.css" rel="stylesheet">
+<link href="/m/skin/css/common.mobile.css" rel="stylesheet">
+<link href="/m/skin/css/base.css" rel="stylesheet">
+<script src="/m/skin/js/jquery.min.js"></script>
+<script src="/m/skin/js/bootstrap.min.js"></script>
+<script language="javascript" type="text/javascript" src="/m/skin/js/adver.js"></script>
+<script language="javascript" src="/m/skin/js/common.js"></script>
+<script src="/m/skin/js/jquery.superslide.2.1.js"></script>
+<script src="/m/skin/js/swipe.js"></script>
+</head>
+<body>
+<div class="main">
+  {dede:include filename="header_m.htm"/}
+  {dede:channelartlist typeid='5,0'}
+  <div class="product">
+    <div class="hd">
+      <div class="tit">{dede:field name='typename'/}</div>
+      <a href="list.php?tid={dede:field name='id'/}" class="more">MORE</a> </div>
+    <div class="bd">
+      <ul class="list-01 clearfix">
+      {dede:arclist titlelen=80 orderby ='pubdate' row='3'}    
+       <!--  <li>
+          <div class="pic"><a href="view.php?aid=[field:id/]"><img src="[field:picname/]"></a></div>
+          <div class="title"><a href="view.php?aid=[field:id/]">[field:title/]</a></div>
+        </li> -->
+         <li>
+          <div class="pic"><a href="view.php?aid=[field:id/]"><img src="/skin/images/yewu1.jpg"></a></div>
+          <div class="title"><a href="view.php?aid=[field:id/]">宣传片制作</a></div>
+        </li>
+         <li>
+          <div class="pic"><a href="view.php?aid=[field:id/]"><img src="/skin/images/yewu2.jpg"></a></div>
+          <div class="title"><a href="view.php?aid=[field:id/]">课件制作</a></div>
+        </li>
+         <li>
+          <div class="pic"><a href="view.php?aid=[field:id/]"><img src="/skin/images/yewu3.jpg"></a></div>
+          <div class="title"><a href="view.php?aid=[field:id/]">微电影拍摄</a></div>
+        </li>
+      {/dede:arclist}  
+      </ul>
+    </div>
+  </div>
+  {/dede:channelartlist} 
+  {dede:channelartlist typeid='4,0'}
+  <div class="product">
+    <div class="hd">
+      <div class="tit">{dede:field name='typename'/}</div>
+      <a href="list.php?tid={dede:field name='id'/}" class="more">MORE</a> </div>
+    <div class="bd">
+      <ul class="list-01 clearfix">
+      {dede:arclist titlelen=80 orderby ='pubdate' row='3'}    
+        <li>
+          <div class="pic"><a href="view.php?aid=[field:id/]"><img src="[field:picname/]"></a></div>
+          <div class="title"><a href="view.php?aid=[field:id/]">[field:title/]</a></div>
+        </li>
+      {/dede:arclist}  
+      </ul>
+    </div>
+  </div>
+  {/dede:channelartlist} 
+  <div class="hModule clearfix">
+    {dede:channelartlist typeid='1,0'}
+    <div class="about hTit">
+      <div class="hd">
+        <div class="tit">{dede:field name='typename'/} | <a href="list.php?tid={dede:field name='id'/}">MORE</a></div>
+      </div>
+      <div class="bd"> {dede:sql sql='Select content from dede_arctype where id=1'}[field:content function='cn_substr(html2text(@me),200)'/] {/dede:sql} ... <a href="list.php?tid={dede:field name='id'/}">详细阅读>></a> </div>
+    </div>
+    {/dede:channelartlist} 
+    {dede:channelartlist typeid='13,0'}
+    <div class="news hTit">
+      <div class="hd">
+        <div class="tit">{dede:field name='typename'/} | <a href="list.php?tid={dede:field name='id'/}">MORE</a></div>
+      </div>
+      <div class="bd">
+        <ul>
+        {dede:arclist titlelen=80 orderby ='pubdate' row='6'}    
+          <li><a href="view.php?aid=[field:id/]">[field:title/]</a></li>
+        {/dede:arclist}     
+        </ul>
+      </div>
+    </div>
+    {/dede:channelartlist} 
+  </div>
+  {dede:include filename="footer_m.htm"/}
+</div>
+</body>
+</html>

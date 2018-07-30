@@ -1,0 +1,31 @@
+<?php
+$typeArr[1] = '公司简介';
+$typeArr[2] = '新闻中心';
+$typeArr[3] = '公司资讯';
+$typeArr[4] = '行业资讯';
+$typeArr[5] = '公司业务';
+$typeArr[16] = '录课室租赁';
+$typeArr[17] = '器材租赁';
+$typeArr[18] = '摄像设备';
+$typeArr[19] = '航拍设备';
+$typeArr[20] = '摇臂设备';
+$typeArr[21] = '导播设备';
+$typeArr[22] = '镜头设备';
+$typeArr[23] = '单反设备';
+$typeArr[24] = '录音设备';
+$typeArr[25] = '直播设备';
+$typeArr[26] = '灯光设备';
+$typeArr[27] = '其他设备';
+$typeArr[28] = '案例作品';
+$typeArr[29] = '大型活动/发布会';
+$typeArr[30] = '高端婚礼';
+$typeArr[31] = '网络直播';
+$typeArr[32] = '宣传片';
+$typeArr[33] = '无人机航拍';
+$typeArr[34] = '产品介绍';
+$typeArr[35] = '广告片';
+$typeArr[36] = '网络课件';
+$typeArr[37] = '微电影';
+$typeArr[38] = '晚会/会议/年会';
+$typeArr[40] = '联系我们';
+?>

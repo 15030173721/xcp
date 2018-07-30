@@ -1,0 +1,37 @@
+<div class="head">
+    <div class="logo"> <a href="tel://{dede:global.cfg_tel/}"><img src="/m/skin/img/logo.jpg"></a> </div>
+    <div class="nav">
+      <ul>
+        <li><a href="/m">网站首页</a></li>
+        {dede:channelartlist typeid='top'}
+        <li><a href="/m/list.php?tid={dede:field name='id'/}">{dede:field name='typename'/}</a></li>
+        {/dede:channelartlist} 
+      </ul>
+    </div>
+    <div id="banner_box" class="box_swipe box">
+      <ul>
+      {dede:arclist titlelen=80 orderby ='pubdate' row='3' typeid='20'}    
+        <li><a href=""><img src="[field:picname/]" style="width:100%;" /></a></li>
+      {/dede:arclist}
+      </ul>
+      <ol>
+        <!-- 此处的slide变量是通过上方标签到的 -->
+        
+        <li class='on'></li>
+        <li ></li>
+        <li ></li>
+      </ol>
+    </div>
+    <script>
+		$(function() {
+			new Swipe($('#banner_box')[0], {
+				speed:500,
+				auto:3000,
+				callback: function(){
+					var lis = $(this.element).next("ol").children();
+					lis.removeClass("on").eq(this.index).addClass("on");
+				}
+			});
+		});
+		</script> 
+  </div>

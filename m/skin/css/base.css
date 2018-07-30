@@ -1,0 +1,427 @@
+﻿ @charset "utf-8";
+/*dede58.com 做最好的织梦整站模板下载网站*/
+html {
+	color: #000;
+	padding: 0 0 55px;
+}
+a {
+	color: #000;
+}
+a:hover {
+	color: #000;
+}
+.clear {
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both
+}
+.box_swipe {
+	overflow: hidden;
+	position: relative;
+	width: 96%;
+	margin: 0 auto;
+}
+.box_swipe ul {
+	overflow: hidden;
+	position: relative;
+}
+.box_swipe ul > li {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.box_swipe ul > li a {
+	color: #FFF;
+	text-decoration: none;
+}
+.box_swipe ul > li .title {
+	position: absolute;
+	bottom: 6px;
+	display: block;
+	width: 70%;
+	height: 20px;
+	padding: 0 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #FFF;
+	z-index: 100;
+}
+.box_swipe>ol {
+	height: 20px;
+	position: relative;
+	z-index: 10;
+	margin-top: -25px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.3);
+}
+.box_swipe>ol>li {
+	display: inline-block;
+	margin-bottom: 1px;
+	width: 16px;
+	height: 10px;
+	border: 1px solid #fff;
+	background-color: #414141;
+}
+.box_swipe>ol>li.on {
+	background-color: #c42727;
+}
+.maxpic {
+}
+.maxpic img {
+	width: 100%;
+}
+.head {
+	margin-bottom: 15px;
+}
+.logo {
+	text-align: center;
+}
+.logo img {
+	width: 100%;
+}
+.nav {
+}
+.nav ul {
+}
+.nav ul li {
+	float: left;
+	width: 25%;
+	padding-bottom: 10px;
+}
+.nav ul li a {
+	display: block;
+	width: 80%;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 10%;
+	padding: 0;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	background-color: #414141;
+}
+.product {
+}
+.product .hd {
+	position: relative;
+	width: 96%;
+	margin: 0 auto;
+	height: 32px;
+}
+.product .hd .tit {
+	float: left;
+	padding: 0 10px;
+	height: 32px;
+	line-height: 32px;
+	background-color: #414141;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+}
+.product .hd .tit span {
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 100;
+}
+.product .hd .more {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0 10px;
+	height: 32px;
+	line-height: 32px;
+	background-color: #414141;
+	color: #fff;
+	font-family: Arial;
+}
+.product .bd {
+	padding: 10px 0;
+}
+.hModule {
+	width: 96%;
+	margin: 0 auto;
+}
+.hModule .hTit {
+	float: left;
+	width: 50%;
+}
+.hModule .hTit .hd {
+	height: 32px;
+	color: #fff;
+}
+.hModule .hTit .hd .tit {
+	float: left;
+	padding: 0 10px;
+	height: 32px;
+	line-height: 32px;
+	background-color: #414141;
+}
+.hModule .hTit .hd .tit a {
+	font-family: Arial;
+	color: #fff;
+}
+.about .bd {
+	padding: 10px;
+	text-indent: 2em;
+	line-height: 26px;
+	height: 166px;
+	overflow: hidden;
+}
+.about .bd a {
+	color: #ff0600;
+}
+.news .bd {
+	padding: 10px;
+}
+.news .bd ul {
+}
+.news .bd ul li {
+	height: 26px;
+	padding: 2px 0;
+	border-bottom: 1px dashed #a3a3a3;
+	overflow: hidden;
+}
+.list-01 {
+}
+.list-01 li {
+	float: left;
+	width: 33.33%;
+	overflow: hidden;
+}
+.list-01 li .pic {
+	width: 86%;
+	margin: 0 auto;
+}
+.list-01 li .pic img {
+	width: 100%;
+}
+.list-01 li .title {
+	text-align: center;
+	padding: 5px 0;
+}
+#fixed-foot {
+}
+#fixed-foot {
+	position: relative;
+	z-index: 1000;
+	color: #fff;
+	text-align: center;
+}
+#fixed-foot {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: table;
+	line-height: 17px;
+	font-size: 0;
+	text-align: left;
+	border-top: 1px solid #e5e5e5;
+	background: #414141;
+}
+#fixed-foot li {
+	width: 24%;
+	height: 75px;
+	padding-top: 5px;
+	text-align: center;
+	font-size: 12px;
+	display: table-cell;
+}
+#fixed-foot .border-left-none {
+	border-left: none;
+}
+#fixed-foot .border-right-none {
+	border-right: none;
+}
+#fixed-foot li a {
+	color: #fff;
+	display: block;
+	line-height: 30px;
+	color: #fff;
+	font-size: 14px;
+}
+#fixed-foot li img {
+	height: 45px;
+}
+.fixed-button {
+	display: block;
+	margin: 0 auto;
+	width: 33px;
+	height: 33px;
+	overflow: hidden;
+}
+.ico_tel {
+	background-image: url(../img/ico_tel.jpg)
+}
+.ico_msg {
+	background-image: url(../img/ico_msg.jpg)
+}
+.ico_qq {
+	background-image: url(../img/ico_qq.jpg)
+}
+.ico_adr {
+	background-image: url(../img/ico_adr.jpg)
+}
+.page {
+	margin: 10px 0;
+	text-align: center;
+}
+.page a {
+	padding: 4px 6px;
+	color: #fff;
+	background-color: #414141;
+}
+.page a:hover, .page a.current {
+	background-color: #414141;
+	color: #fff;
+}
+.menu {
+}
+.menu .hd {
+	height: 32px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.menu .hd .tit {
+	float: left;
+	padding: 0 10px;
+	height: 32px;
+	line-height: 32px;
+	background-color: #414141;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+}
+.menu .hd .tit span {
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 100;
+}
+.menu .bd {
+	text-align: center;
+	padding-bottom: 10px;
+}
+.menu .bd a {
+	display: inline-block;
+	padding: 6px 10px;
+	background-color: #414141;
+	color: #fff;
+	margin-bottom: 6px;
+}
+.box {
+	width: 96%;
+	margin: 0 auto;
+}
+.pd10 {
+	padding: 10px;
+	margin: 0;
+	overflow: hidden;
+}
+.pd10 .theme {
+	font-size: 14px;
+	margin-bottom: 0;
+	color: #045e92;
+}
+.pd10 .ms_time {
+	padding: 5px 0px;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #898989;
+}
+.info-list {
+}
+.info-list li {
+	height: 35px;
+	line-height: 35px;
+	font-size: 12px;
+}
+.info-list li a {
+	display: block;
+	padding-left: 10px;
+	height: 35px;
+	border-bottom: 1px dashed #a3a3a3;
+	overflow: hidden;
+}
+/*表单样式*/					
+.inputbox {
+	margin: 0 1.2em 1.5em;
+	overflow: hidden;
+	zoom: 1;
+}
+.inputbox p {
+	padding: .5em 0
+}
+.inputbox .ibl {
+	float: left;
+	width: 20%;
+	text-align: right;
+	display: block;
+	padding-top: .4em
+}
+.inputbox .ibr {
+	margin: 0 10% 0 20%;
+	display: block;
+	padding-left: .3em
+}
+.tip {
+	margin: 0 1.2em 1em;
+	color: #f60
+}
+.module_form_box {
+	margin: 0 1.2em 1.5em;
+}
+.module_form_intro {
+	border-bottom: 1px solid #e2e2e2;
+	margin: 0 0 1.2em
+}
+.module_form_intro .name {
+	border-bottom: 3px solid #f30;
+	display: inline-block;
+*display:inlne;
+	zoom: 1;
+	padding: 0 .8em .5em;
+	font-size: 14px;
+	font-weight: bold;
+	color: #333
+}
+.module_field {
+	padding: .5em 0
+}
+.module_field .c_left {
+	float: left;
+	width: 15%;
+	text-align: right;
+	display: block;
+	padding-top: .4em
+}
+.module_field .middle {
+	margin: 0 0 0 15%;
+	display: block;
+	padding-left: .3em
+}
+.module_form_tips {
+	padding: .3em 1em .8em;
+	color: #f60
+}
+/*提交，重置按钮*/
+.btn-submit {
+	width: 80px;
+	height: 35px;
+	border: 0;
+	background: url(../img/btn-submit.jpg) no-repeat;
+	cursor: pointer;
+	color: #fff;
+	font-size: 14px;
+	font-weihgt: bold
+}
+.reset {
+	width: 80px;
+	height: 35px;
+	border: 0;
+	background: url(../img/btn-submit2.jpg) no-repeat;
+	cursor: pointer;
+	color: #fff;
+	font-size: 14px;
+	font-weihgt: bold
+}

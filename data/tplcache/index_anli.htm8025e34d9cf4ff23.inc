@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("field","",64,83);
+$z[0][4]=array();
+$z[0][4]['name']="title";
+$z[1]=Array("global","",84,110);
+$z[1][4]=array();
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("global","",153,180);
+$z[2][4]=array();
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("field","",220,271);
+$z[3][4]=array();
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("global","",1089,1116);
+$z[4][4]=array();
+$z[4][4]['name']="cfg_basehost";
+$z[5]=Array("channel","\r\n                <li class=\" button button--wayra button--border-thick button--text-upper button--size-s\"><a style=\"font-size:14px;color:#000;\" href=\"[field:typelink/]\"><div class=\"bai\">[field:typename/]</div><div class=\"hong\">[field:typename/]</div></a>\r\n                </li>\r\n            ",1204,1553);
+$z[5][4]=array();
+$z[5][4]['row']="8";
+$z[5][4]['type']="top";
+$z[6]=Array("field","",4025,4048);
+$z[6][4]=array();
+$z[6][4]['name']="seotitle";
+$z[7]=Array("field","",4094,4145);
+$z[7][4]=array();
+$z[7][4]['name']="description";
+$z[7][4]['function']="html2text(@me)";
+$z[8]=Array("field","",4408,4431);
+$z[8][4]=array();
+$z[8][4]['name']="seotitle";
+$z[9]=Array("channel","\r\n                \r\n                <a style=\"width:150px;color:#000\" href=\"[field:typelink/]\" class=\" button button--ujarak button--border-medium button--round-s button--text-thick anlia\">[field:typename/]</a>\r\n    ",4553,4851);
+$z[9][4]=array();
+$z[9][4]['row']="10";
+$z[9][4]['type']="son";
+$z[9][4]['typeid']="28";
+$z[10]=Array("arclist","\r\n                <li>\r\n                <a href=\"[field:arcurl/]\">\r\n                <div class=\"pic\"><img src=\"[field:picname/]\" width=\"100%\" height=\"100%\"></div>\r\n                <span class=\"intro\">\r\n                    <h5>[field:title/]</h5>\r\n                    <p></p>\r\n                </span>\r\n                <div class=\"play1\"></div>\r\n                <div class=\"mask\"></div>\r\n                </a>\r\n                </li>\r\n            ",4984,5472);
+$z[10][4]=array();
+$z[10][4]['row']="9";
+
+?>

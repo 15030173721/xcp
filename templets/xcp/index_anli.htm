@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="/skin/css/child.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/zy.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/buttons.css" />
+<script type="text/javascript" src="/skin/js/jQuery1.7.2.js" ></script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- xcp.huashifengxing.com Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?00ad5335837a43cc6fbc3ff32feac612";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+<!--顶部导航-->
+
+<div class="outter header_t" style="position:relative;">
+        <div class="logo_t"></div>
+        <div class="nav_index">
+            <ul>                                    
+                <li class=" button button--wayra button--border-thick button--text-upper button--size-s"><a style="font-size:14px;color:#000;" href="{dede:global.cfg_basehost/}"><div class="bai">首    页</div><div class="hong">首页</div></a></li>
+            {dede:channel    row='8'    type ='top'  }
+                <li class=" button button--wayra button--border-thick button--text-upper button--size-s"><a style="font-size:14px;color:#000;" href="[field:typelink/]"><div class="bai">[field:typename/]</div><div class="hong">[field:typename/]</div></a>
+                </li>
+            {/dede:channel} 
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="phone"><img src="/images/phone.jpg" alt="电话"></div>
+        <div class="clear"></div>
+        <div class="outnav" style="position:absolute; top:75px; left:593px; width:620px; height:160px; background:#fff; z-index:9999; text-align:left; "	>
+        	<ul>
+            	<div class="outnav_li" style="width:120px;">
+                <li><a href="yewu5.php">大型活动拍摄</a></li>
+                <li><a href="yewu.php">VR拍摄与制作</a></li>
+                <li><a href="yewu8.php">网络直播 </a></li>
+             
+                
+                
+                
+                </div>
+                <div class="outnav_li" style="width:120px;"> 
+                <li><a href="yewu2.php">宣传片</a></li>
+                <li><a href="yewu6.php">无人机航拍</a></li>
+                 <li><a href="yewu9.php">摄影</a></li>
+               
+                
+                </div>
+                <div class="outnav_li" style="width:120px;"> 
+                <li><a href="yewu3.php">广告片</a></li>
+                <li><a href="yewu10.php">栏目包装</a></li>
+               
+                
+                
+                
+                </div>
+                <div class="outnav_li" style="width:120px; border-right:none; margin-right:10px;">
+                <li><a href="yewu4.php">微电影</a></li>
+                 <li><a href="yewu7.php">演播室租赁</a></li>
+                 
+                
+                
+                </div>
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    
+    <style>
+		.outnav { display:none; background:#fff;filter:alpha(opacity=80); opacity:0.8;}
+    	.outnav ul { padding:20px; padding-top:10px;}
+		.outnav_li { float:left; margin-right:30px; border-right:1px #ccc solid;}
+		.outnav_li li { margin-top:20px;}
+		.outnav li a { font-size:14px; color:#666; line-height:20px;}
+		.outnav li a:hover { color:#da251e}
+    </style>
+    <script>
+    	$('.outn').hover(
+			function(){
+					$('.outnav').css('display','block')
+				},function(){
+					$('.outnav').css('display','none')}
+		)
+		$('.outnav').hover(
+			function(){
+					$('.outnav').css('display','block')
+				},function(){
+					$('.outnav').css('display','none')}
+		)
+    </script><!--顶部导航-->
+
+<!--banner轮播 begin-->
+<div id="bannerWeb">
+	<div class="bj1 bj1_case">
+    	<div class="outter">
+        	<h1>{dede:field.seotitle /}</h1>
+            <h3>CORPORATE CASE</h3>
+            <p>{dede:field.description function='html2text(@me)'/}</p>
+            <!-- <p>上海世博会等大型活动拍摄制作近千场。</p> -->
+        </div>
+    </div>
+</div>
+<!--end-->
+
+
+<!--子页内容-->
+<!--案例作品-->
+<div class="outter" id="case1">
+    <div class="clzp_con">
+        <h1><font>{dede:field.seotitle /}</font></h1>
+        <h3>CORPORATE CASE</h3>
+        
+    </div>
+    <div class="case_items1 equip">
+    {dede:channel     row='10'       type ='son'   typeid ='28'       }
+                
+                <a style="width:150px;" href="[field:typelink/]" class=" button button--ujarak button--border-medium button--round-s button--text-thick anlia">[field:typename/]</a>
+    {/dede:channel}
+                
+        <div class="clear"></div>
+    </div>
+    <div class="play_items content01">
+        <ul>
+            {dede:arclist      row='9'   }
+                <li>
+                <a href="[field:arcurl/]">
+                <div class="pic"><img src="[field:picname/]" width="100%" height="100%"></div>
+                <span class="intro">
+                    <h5>[field:title/]</h5>
+                    <p></p>
+                </span>
+                <div class="play1"></div>
+                <div class="mask"></div>
+                </a>
+                </li>
+            {/dede:arclist}    
+                <div class="clear"></div>
+        </ul>
+    </div>
+
+    
+    
+</div>
+<!--案例作品-->
+
+
+<!--子页内容-->
+
+<!--尾部footer-->
+{dede:include filename="footer.htm"/}
+<!--尾部footer-->
+</div>
+</body>
+</html>

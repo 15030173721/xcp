@@ -1,0 +1,1 @@
+<li><a href=""><img src="[field:picname/]" style="width:100%;" /></a></li>

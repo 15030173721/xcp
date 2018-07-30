@@ -1,0 +1,1 @@
+<li><a href="/m/list.php?tid={dede:field name='id'/}">{dede:field name='typename'/}</a></li>

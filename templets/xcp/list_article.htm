@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="/style/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="/style/css/style.css" type="text/css" rel="stylesheet" />
+<link href="/style/css/animate.min.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/style/js/jquery.min.js"></script>
+<script type="text/javascript" src="/style/js/animate.min.js"></script>
+<script type="text/javascript" src="/style/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/style/js/TouchSlide.1.1.js"></script>
+<!-- <script type="text/javascript" src="/style/js/common.js"></script> -->
+
+<link rel="stylesheet" type="text/css" href="/skin/css/child.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/zy.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/buttons.css" />
+<script type="text/javascript" src="/skin/js/jQuery1.7.2.js" ></script>
+
+
+
+<!--[if lte IE 6]>
+<script src="/style/js/png.js" type="text/javascript"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- xcp.huashifengxing.com Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?00ad5335837a43cc6fbc3ff32feac612";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body>
+{dede:include filename="head.htm"/} 
+
+<!--内容区开始-->
+
+<div class="main">
+  <div class="container">
+    <div class="main_top">
+      <h3><p>{dede:field.typeid runphp='yes'}$ID = @me; $sql = "SELECT * FROM `dede_arctype` WHERE id=$ID";$query = mysql_query($sql);$row=mysql_fetch_array($query); $relID = "$row[reid]"; if($relID == 0) {@me = $row[typename];}else{$sql = "SELECT `typename` FROM `dede_arctype` WHERE id=$relID";$query = mysql_query($sql);$row=mysql_fetch_array($query); @me = $row[typename];}{/dede:field.typeid}</p></h3>
+    </div>
+    <div class="main_type">
+      <ul>
+        {dede:channel type='son' currentstyle="
+        <li class='current'><a href='~typelink~'>~typename~</a></li>
+        "}
+        <li><a href='[field:typelink/]' title='[field:typename/]'>[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </div>
+    <div class="main_con">
+      <div class="articleList">
+        <ul>
+          {dede:list pagesize='5'}
+          <div class="art_list not-animated" data-animate="fadeInUp">
+            <div class="art_img"><a href='[field:arcurl/]'><img src='[field:litpic/]' width="" /></a></div>
+            <div class="art_right">
+                <div class="art_title"><a href='[field:arcurl/]' style="color:#000;" >[field:title/]</a></div>
+                <div class="art_author"><span>日期：[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</span></div>
+                <div class="art_des">[field:description function='cn_substr(@me,250)'/]...</div>
+            </div>
+          </div>
+          {/dede:list}
+        </ul>
+      </div>
+      <div class="blank clear"></div>
+      <div class="pagess">
+        <ul>
+         {dede:pagelist listitem="index,end,pre,next,pageno" listsize="3"/}
+        </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!--内容区结束--> 
+
+{dede:include filename="footer.htm"/}
+
+
+<script type="text/javascript">
+
+$(function(){
+
+    $("#aaa li").click(function() {
+
+        // alert('获取成功');
+
+        $(this).siblings('li').removeClass('cur');  // 删除其他兄弟元素的样式
+
+        $(this).addClass('cur');    // 添加当前元素的样式
+
+           })
+
+    })        
+
+</script>
+
+</body>
+</html>
